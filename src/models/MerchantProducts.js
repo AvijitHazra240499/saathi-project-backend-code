@@ -38,10 +38,10 @@ const merchantProductSchema = new dynamoose.Schema({
   },
   merchantProductParameters: {
     type: Object,
-    saveUnknown: true
   }
 }, {
-  timestamps: true
+  timestamps: true,
+  "saveUnknown": true
 });
 
 // Create the model
